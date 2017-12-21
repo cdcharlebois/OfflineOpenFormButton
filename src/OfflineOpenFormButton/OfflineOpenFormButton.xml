@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="OfflineOpenFormButton.widget.OfflineOpenFormButton" needsEntityContext="true" offlineCapable="true" xmlns="http://www.mendix.com/widget/1.0/">
+    <name>OfflineOpenFormButton</name>
+    <description>The description of this widget.</description>
+
+    <icon />
+
+    <properties>
+        <property key="form" type="form" required="true">
+          <caption>Page to Open</caption>
+          <category>General</category>
+          <description></description>
+        </property>
+        <property key="placeholder" type="enumeration" defaultValue="content" required="true">
+          <caption>Placeholder</caption>
+          <category>Advanced</category>
+          <description></description>
+          <enumerationValues>
+            <enumerationValue key="content">Content</enumerationValue>
+            <enumerationValue key="popup">Popup</enumerationValue>
+            <enumerationValue key="modal">Modal</enumerationValue>
+          </enumerationValues>
+        </property>
+        <property key="targetButtonName" type="string" required="false">
+          <caption>Button Name</caption>
+          <category>General</category>
+          <description>e.g. "actionButton1" **Note: the button must be a sibling element of this widget.</description>
+        </property>
+    </properties>
+</widget>
